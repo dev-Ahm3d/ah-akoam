@@ -1,0 +1,55 @@
+.cover {
+    position: relative;
+    padding-top: 250px;
+}
+
+.cover img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+    width: 85%;
+    height: 100%;
+    z-index: -1;
+    transform: translate(-50%,-50%);   
+}
+
+.cover .content {
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media(max-width:600px){
+    .cover .content {
+        width: 60%;
+    }
+
+}
+
+@media(max-width:400px){
+    .cover .content {
+        width: 70%;
+    }
+
+}
+
+.cover .content .spans {
+    text-align: right;
+}
+
+.cover .content .spans:last-child {
+    margin-right: 5px;
+}
+
+.cover .content .spans span {
+    background-color: var(--main-color);
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.cover .content .spans span i {
+    color: orange;
+}

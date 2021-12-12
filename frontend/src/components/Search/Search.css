@@ -1,0 +1,48 @@
+.inp-search {
+    margin: 30px auto;
+    position: relative;
+    z-index: 1;
+}
+
+@media(min-width:990px){
+    .inp-search{
+        margin: 30px 25%;
+    }
+}
+
+@media(max-width:768px){
+    .inp-search{
+        margin: 30px 10%;
+    }
+}
+
+
+.inp-search button {
+    background-color: var(--sec-color);
+    padding: 10px 40px;
+    color: white;
+    height: 100%;
+}
+
+.my-field {
+    height: 100%;  
+    background-color: var(--third-color);
+    padding: 11px 40px;
+    border: none;
+    border: 1px solid var(--third-color);
+    width: 100%;
+    border-radius: 3px;
+}
+
+.my-field:focus {
+    background-color: var(--main-color);
+    box-shadow: none;
+    color: white;
+}
+
+.my-field:focus::placeholder {
+    visibility: hidden;
+}
+
+
+

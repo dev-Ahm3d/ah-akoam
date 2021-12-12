@@ -1,0 +1,133 @@
+.custom-card{
+    color: white;
+    background-size: cover;
+    cursor: pointer;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.custom-cardC{
+    color: white;
+    background-size: cover;
+    cursor: pointer;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.hw1{
+    min-height: 250px;
+}
+.hw2{
+    min-width: 195px;
+    min-height: 350px;
+}
+
+.h6Custom {
+    margin: -60px auto !important;
+}
+
+.custom-card:hover .custom-parent {
+    top: 42%;
+}
+
+.custom-card:hover .last-title {
+    bottom: 0;
+}
+
+.custom-card:hover .justLine {
+    width: 70%;
+}
+
+
+.custom-card .custom-badge {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: var(--third-color);
+    color: white;
+    padding: 5px;
+    font-size: small;
+    border-radius: 3px;
+}
+
+.custom-card .custom-badge span {
+    margin-left: 3px;
+}
+
+.custom-card .custom-badge i {
+    color: rgb(243, 180, 7);
+}
+
+.custom-card .custom-parent {
+    position: absolute;
+    left: 50%;
+    top: -100px;
+    transform: translateX(-50%);
+    transition: .5s;
+}
+
+.custom-card .custom-title {
+    position: relative;
+    border-bottom: 2px solid red;
+}
+
+.custom-card .custom-title:hover {
+    color: orange;
+}
+
+.custom-card .custom-title i {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.custom-card .custom-title p {
+    position: absolute;
+    top: 20px;
+    left: -25px;
+}
+
+.custom-card .justLine {
+    position: absolute;
+    left:50%;
+    top: 67% ;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 1px;
+    background-color: rgb(129, 129, 129);
+    text-align: center;
+    transition: .7s;
+}
+
+.custom-card .last-title {
+    position: absolute;
+    left: 50%;
+    bottom: -140px ;
+    transform: translateX(-50%);
+    padding: 10px;
+    transition: .5s;
+}
+
+.custom-card .last-title h6{
+    margin: 5px auto;
+    text-align: center;
+    font-size: small;
+}
+
+.custom-card .custom-spans {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.custom-card .custom-spans span{
+    background-color: rgb(206, 193, 193);
+    color: black;
+    padding: 5px 12px;
+    font-size: small;
+    margin-left: 2px;
+    border-radius: 3px;
+}

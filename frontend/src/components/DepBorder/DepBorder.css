@@ -1,0 +1,55 @@
+.my-dep{
+    margin: 5px auto;
+    position: relative;
+}
+
+@media(max-width:752px){
+    .my-dep{
+        margin-top:30px; 
+    }
+}
+
+h5{
+    position: relative;
+}
+
+h5::before , h5::after {
+    position: absolute;
+    right: 0 ;
+    
+}
+
+h5::before {
+    content: '';
+    top: 36px;
+    width: 50px;
+    height: 2px;
+    background-color: white;
+}
+
+h5::after{
+    content: '^^^^';
+    top: 26px;
+    color: white;
+}
+.my-dep > div{
+    border-bottom: 1px solid rgb(68, 68, 68);
+    padding-bottom: 5px;
+}
+
+
+h5 {
+    margin-left: 10px;
+}
+
+.dropdown ,h5 {
+    display: inline-block;
+}
+
+.dropdown-toggle , .dropdown-item {
+    color: rgb(194, 179, 179);
+}
+
+.dropdown-menu {
+    background-color: var(--main-color);
+}

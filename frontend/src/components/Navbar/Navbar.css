@@ -1,0 +1,34 @@
+.logo img{
+    width: 100px;
+    height: 60px;
+}
+
+.header{
+    font-size: large;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: var(--third-color) ;
+    color: white;
+    z-index: 10000;
+
+}
+
+.header .col-auto {
+    padding : 0 
+}
+
+.aqsam {
+    margin-right: 15px;
+}
+
+.aqsam > span span {
+    margin-right: 2px;
+}
+
+
+.recently > span span {
+    padding: 0 5px;
+}

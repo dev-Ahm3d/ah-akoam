@@ -1,0 +1,34 @@
+.my-breadcrumb{
+    margin-top: 60px;
+}
+.my-breadcrumb a{   
+    position: relative;
+    margin-left: 50px;
+    color: rgb(194, 194, 194) !important;
+    padding-bottom: 5px;
+}
+
+.my-breadcrumb a::after{
+    position: absolute;
+    content: '\f053';
+    font-family: 'Font Awesome 5 Pro';
+    left: -30px;
+    top: 0;
+    font-size: large;
+    font-weight: 400;
+    color: gray !important;
+}
+
+.my-breadcrumb a:nth-child(3)::after{
+    display: none;
+}
+
+.my-breadcrumb a:nth-child(1) i {
+    margin-left: 5px;
+}
+
+.my-breadcrumb a:hover ,
+.my-breadcrumb a:hover i ,
+.my-breadcrumb a:hover span {
+    color: orange !important;
+}

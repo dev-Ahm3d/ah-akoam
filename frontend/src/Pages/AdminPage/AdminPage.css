@@ -1,0 +1,106 @@
+.my-sidebar{
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--third-color);
+    width: 200px;
+    height: calc(100vh - 60px);
+    border-top: 2px solid rgb(65, 64, 64);
+    border-left: 2px solid rgb(65, 64, 64);
+}
+
+li{
+    cursor: pointer;
+}
+.settings-header{
+    position: relative;
+    font-size: larger;
+    padding-right: 25px;
+    padding-top: 10px;
+}
+
+.settings-header::before{
+    content: '\f013';
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    padding-top: 10px;
+    padding-right: 2px;
+}
+
+.settings-header::after{
+    content: '';
+    position: absolute;
+    width: 52%;
+    height: 2px;
+    right: 0;
+    bottom: -10px;
+    background-color: white;
+}
+
+
+.settings{
+    list-style: none;
+    padding-top: 20px;
+}
+
+.settings li{
+    padding-bottom:20px;
+    font-size: 17px;
+}
+
+.settings li i{
+    color: var(--sec-color);
+}
+
+.settings li span:first-of-type{
+    padding-left:10px;
+}
+
+.field-container{
+    position: absolute;
+    top: 75px;
+    right: 250px;
+    width: 60%;
+    padding-bottom: 15px;
+}
+
+.field-container .field {
+}
+
+.field-container .field h4 {
+    padding-bottom: 10px;
+}
+
+.field .txt-inp , .field .select-inp {
+    margin-bottom: 15px;
+}
+
+.field .txt-inp .child-input , .field .select-inp .child-select {
+    width: 65%;
+    margin-right: 20px;
+    border: none;
+    border-radius: 3px;
+}
+
+.field-container .child-input:focus , .field-container .child-select:focus{
+    outline: none;
+}
+
+.update-btn,.delete-btn,.add-btn{
+    border-radius: 5px;
+    background-color: var(--sec-color);
+    color:white;
+    border: none;
+    padding: 10px 20px;
+}
+
+.delete-btn {
+    background-color: red;
+}
+
+.add-btn {
+    background-color: green;
+}

@@ -1,0 +1,44 @@
+.feature{
+    position: relative;
+    margin: 30px auto;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px;
+}
+
+
+.feature .content > div   p {
+    padding-top: 20px;
+    font-size: large;
+}
+
+.feature .content > img {
+    width: 200px;
+    height: 250px;
+}
+
+.feature .content  button {
+    background: transparent;
+    border-radius: 20px;
+    padding: 7px 15px;
+    color: white;
+    border: 1px solid gray;
+}
+
+@media(min-width:768px){
+    .feature .content{
+        text-align: right !important;
+    }
+
+    .feature .content > div   p {
+        margin: 5px !important;
+        margin-bottom: 15px !important;
+    }
+}
+
+@media(max-width:400px){
+    .feature .content > div   p {
+        width: 100% !important;
+    }
+}

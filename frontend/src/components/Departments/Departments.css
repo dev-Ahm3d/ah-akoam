@@ -1,0 +1,41 @@
+.deps {
+    margin: 30px auto;
+    padding: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.deps .dep {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--third-color);
+    font-size: large;
+    border-radius: 5px;
+    transition: 1s;
+    min-width: 50px;
+    padding: 20px;
+}
+
+
+@media(min-width:990px){
+    .deps{
+        margin: 30px 25%;
+    }
+}
+
+.deps .dep:hover {
+    background-color: var(--sec-color) ;
+}
+
+.dep span , .dep i {
+    display: block;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.dep i {
+    margin-bottom: 10px;   
+}

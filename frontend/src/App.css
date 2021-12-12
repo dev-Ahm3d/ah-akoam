@@ -1,0 +1,52 @@
+html , body {
+    font-family: 'Cairo', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: black
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: rgb(44, 44, 44);
+}
+
+:root{
+    --main-color : rgb(29, 29, 29);  
+    --sec-color : rgb(255, 145, 1);
+    --third-color : rgb(44, 44, 44) ;
+    --fourth-color : rgb(206, 202, 202);
+    --fifth-color : rgb(90, 90, 90) ;
+}
+
+body{
+    direction: rtl;
+    position: relative;
+    color: white;
+}
+
+a{
+    text-decoration: none !important;
+    color: white !important;
+    cursor: pointer !important;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: transparent;
+}
+
+a:hover{
+    color: white;
+}

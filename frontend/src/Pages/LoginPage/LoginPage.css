@@ -1,0 +1,32 @@
+.login-container{
+    padding-top: 100px;
+    width: 90%;
+    margin: auto;
+}
+
+.login-container input ,
+.login-container button{
+    width: 50%;
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+    max-width: 700px !important;
+}
+
+.login-container button{
+    background-color: var(--sec-color);
+    width: 20%;
+    color: white;
+}
+
+.login-container input:focus {
+    outline: none;
+}
+
+.msg{
+    background-color: green;
+    border-radius: 2px;
+    padding: 10px;
+    width: fit-content;
+    margin: 30px auto;
+}

@@ -1,0 +1,54 @@
+.to-main-page{
+    padding-top: 150px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.to-main-page .logo-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    border: 5px solid white;
+    font-size: larger;
+    transition: .5s;
+    position: relative;
+}
+
+.to-main-page .logo-container::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 280px;
+    width: 280px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: .5s;
+}
+
+.to-main-page .logo-container svg{
+    margin-bottom: 10px;
+}
+
+.to-main-page .logo-container:hover{
+    border: 5px solid rgb(50, 184, 224);            
+}
+
+.to-main-page .logo-container:hover::after{
+    height: 250px;
+    width: 250px;
+    border: 5px solid rgb(50, 184, 224);         
+}
+
+.to-main-page .logo-container:hover h4{
+    color: rgb(50, 184, 224);   
+}
